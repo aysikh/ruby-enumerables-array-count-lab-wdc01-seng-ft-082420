@@ -9,11 +9,12 @@ def count_strings(array)
       if array[row_index][element_index].is_a? String 
         array_of_strings << array[row_index][element_index]
       end
-      count += 1 
+      element_index += 1 
     end
+    row_index += 1 
+  end
     total_strings = array_of_strings.join(" ")
     return total_strings
-  end
 end
 
 def count_empty_strings(array)
