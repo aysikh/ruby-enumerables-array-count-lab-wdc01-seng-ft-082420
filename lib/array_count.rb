@@ -12,5 +12,4 @@ def count_empty_strings(array)
   array.count do { |strings| strings = ""}
     strings.is_a? String
     end
-    empty_strings
 end
