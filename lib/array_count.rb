@@ -7,7 +7,7 @@ def count_strings(array)
     element_index = 0
     while element_index < array[row_index].count do
       if array[row_index][element_index].is_a? String 
-        array_of_strings << array[row_index][element_index]
+        array_of_strings << array[row_index][element_index].count
       end
       element_index += 1 
     end
